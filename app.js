@@ -1,12 +1,12 @@
 let express = require("express");
 let app = express();
-var path = require("path");
+let path = require("path");
 
 app.set("view engine","ejs");
 app.get("/", (req,res) => {
-    res.render("index");
+    res.render("home");
 })
 
-app.listen(7000, (req,res) => {
+app.listen(8000, (req,res) => {
     console.log("Server Started...")
 })
